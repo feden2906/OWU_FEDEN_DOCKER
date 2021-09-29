@@ -23,3 +23,17 @@ services:
     volumes:
       - ./FRONTEND_BUILD:/usr/share/nginx/html           # TODO
       - ./nginx.conf:/etc/nginx/conf.d/default.conf
+
+
+
+#  configure MongoDB
+#  db:
+#    image: mongo
+#    env_file:
+#      - .env
+#    restart: on-failure
+#    ports:
+#      - "27018:27017"
+#    volumes:
+#      - ./mongo-db:/data/db
+#      - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
