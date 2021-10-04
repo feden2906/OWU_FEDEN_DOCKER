@@ -15,3 +15,4 @@ WORKDIR /app
 COPY BACKEND/package.json /app
 # install node_modules id production mode
 RUN npm install --production
+
